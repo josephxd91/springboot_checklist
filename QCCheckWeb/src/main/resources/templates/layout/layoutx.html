@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:fragment="head">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Tell the browser to be responsive to screen width -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ela - Bootstrap Admin Dashboard Template</title>
+
+<!-- Favicon icon -->
+<link rel="icon" type="image/png" sizes="16x16"
+	th:href="@{/images/favicon.png}" />
+
+<link th:href="@{/css/nestable.css}" rel="stylesheet">
+<link th:href="@{/css/chartist.min.css}" rel="stylesheet" />
+<link th:href="@{/css/owl.carousel.min.css}" rel="stylesheet" />
+<link th:href="@{/css/owl.theme.default.min.css}" rel="stylesheet" />
+<!-- Bootstrap Core CSS -->
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+<!-- Custom CSS -->
+<link th:href="@{/css/helper.css}" rel="stylesheet" />
+<link th:href="@{/css/style.css}" rel="stylesheet" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
+<!--[if lt IE 9]>
+    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="fix-header fix-sidebar">
+	<!-- Preloader - style you can find in spinners.css -->
+	<div class="preloader">
+		<svg class="circular" viewBox="25 25 50 50">
+			<circle class="path" cx="50" cy="50" r="20" fill="none"
+				stroke-width="2" stroke-miterlimit="10" /> </svg>
+	</div>
+
+	<!-- Main wrapper  -->
+	<th:block th:fragment="content01">
+		<div id="main-wrapper">
+			<!-- header header  -->
+			<th:block th:replace="layout/fragments/header :: header" />
+			<!-- End header header -->
+			<!-- Left Sidebar  -->
+			<th:block th:replace="layout/fragments/naver :: left_sidebar" />
+			<!-- End Left Sidebar  -->
+			<!-- Page wrapper x  -->
+			<div class="page-wrapper">
+	</th:block>
+			
+			
+
+	<th:block th:fragment="content02">
+			<th:block th:replace="layout/fragments/footer :: footer" />
+			</div>
+		<!-- End Page wrapper x  -->
+		</div>
+		<!-- End Wrapper -->
+
+		<!-- All Jquery -->
+		<script th:src="@{/js/jquery.min.js}"></script>
+		<!-- Bootstrap tether Core JavaScript -->
+		<script th:src="@{/js/popper.min.js}"></script>
+		<script th:src="@{/js/bootstrap.min.js}"></script>
+		<!-- slimscrollbar scrollbar JavaScript -->
+		<script th:src="@{/js/jquery.slimscroll.js}"></script>
+		<!--Menu sidebar -->
+		<script th:src="@{/js/sidebarmenu.js}"></script>
+		<!--stickey kit -->
+		<script th:src="@{/js/sticky-kit.min.js}"></script>
+
+
+		<script th:src="@{/js/d3.min.js}"></script>
+		<script th:src="@{/js/topojson.js}"></script>
+		<!-- 		<script th:src="@{/js/datamaps.world.min.js}"></script> -->
+		<!-- 		<script th:src="@{/js/datamap-init.js}"></script> -->
+
+		<script th:src="@{/js/jquery.simpleWeather.min.js}"></script>
+		<script th:src="@{/js/weather-init.js}"></script>
+		<script th:src="@{/js/owl.carousel.min.js}"></script>
+		<script th:src="@{/js/owl.carousel-init.js}"></script>
+
+
+<!-- 		<script th:src="@{/js/chartist.min.js}"></script> -->
+<!-- 		<script th:src="@{js/chartist-plugin-tooltip.min.js}"></script> -->
+<!-- 		<script th:src="@{js/chartist-init.js}"></script> -->
+
+    <script th:src="@{/js/jquery.nestable.js}"></script>
+    <!-- scripit init-->
+    <script th:src="@{/js/nestable.init.js}"></script>
+
+		<!--Custom JavaScript -->
+		<script th:src="@{/js/custom.min.js}"></script>
+	
+
+	</th:block>
+
+
+
+
+</body>
+</html>

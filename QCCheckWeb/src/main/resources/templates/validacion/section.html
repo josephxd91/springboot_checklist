@@ -1,0 +1,55 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Informacion /
+            <label th:text="${herramienta==null}?${elemento.temaElemento}" />
+            <label th:text="${elemento==null}?${herramienta.nombreHerramienta}" />
+        </h4>
+        <!-- Large modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+    </div>
+
+</div>
+<div style="overflow-y: scroll; height: 450px;">
+
+
+    <!-- 					<div class="card border-success mb-3"> -->
+    <!-- 						<div class="card-header bg-transparent border-success">¿La información del ticket se encuentra correctamente lleno?</div> -->
+    <!-- 						<div class="card-body text-success"> -->
+    <!-- 							<h5 class="card-title"></h5> -->
+    <!-- 							<p class="card-header bg-transparent border-success">"Validar que la información del ticket en la Herramienta de Gestión de Cambio esté correctamente llenada, con especial -->
+    <!-- 								atención: Nivel de Criticidad: debe estar ingresado el NC según Excel de nivel de criticidad. Aplicativo: debe ser -->
+    <!-- 								el que corresponde. Status: Si es el primer congelamiento: ""Registrado"" Si es un re-congelamiento, el estado también -->
+    <!-- 								debe ser: ""Registrado"" Para Adelanto o validación de formatos en PRODUCCIÓN el Estado debe estar en ""Certificación"" -->
+    <!-- 								si la Criticidad es 3, si tiene Criticidad 2 o 1 el Estado debe estar en “Sin Pruebas”. Tipo de ticket: debe estar -->
+    <!-- 								marcada ""Plataforma Distribuida"" Campo Operaciones: "" SI"" -> Solo aplica para congelamientos atendidos por el -->
+    <!-- 								CCAL Dedicado (everis). para todos los aplicativos UAPR."</p> -->
+    <!-- 						</div> -->
+    <!-- 						<div class="card-footer bg-transparent border-success">Creado por Jose Mendoza ,2017-01-01</div> -->
+    <!-- 					</div> -->
+
+    <!-- 					<div class="card border-success mb-3"> -->
+    <!-- 						<div class="card-header bg-transparent border-success">¿Se ha verificado que los servidores indicados en tabla de equivalencias son los mismos que se utilizan en el proceso -->
+    <!-- 							de configuración y reversión?</div> -->
+    <!-- 						<div class="card-body text-success"> -->
+    <!-- 							<h5 class="card-title"></h5> -->
+    <!-- 							<p class="card-header bg-transparent border-success">La cantidad de SERVIDORES INVOLUCRADOS debe ser igual a la cantidad de servidores que intervienen en la instalación -->
+    <!-- 								e igual a la cantidad de servidores que intervienen en el proceso de reversión. -->
+    <!-- 							</p> -->
+    <!-- 						</div> -->
+    <!-- 						<div class="card-footer bg-transparent border-success">Creado por Jose Mendoza ,2017-01-01</div> -->
+    <!-- 					</div> -->
+</div>
+
+<!-- Large modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
+
+<!-- End PAge Content -->
